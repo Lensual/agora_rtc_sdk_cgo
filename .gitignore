@@ -1,0 +1,10 @@
+.vscode
+__debug_bin
+
+.env
+
+# agora sdk
+crash_context_v1
+agoradns.dat
+agorareport.dat
+xdump_config
