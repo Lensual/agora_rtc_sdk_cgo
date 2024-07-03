@@ -385,7 +385,7 @@ func (b *RtcConnectionObserverBridge) ToAgoraEventHandler() *agora.IRtcConnectio
 }
 
 func (b *RtcConnectionObserverBridge) Delete() {
-	C.C_RtcConnectionObserverBridge_Delete(unsafe.Pointer(b))
+	C.C_RtcConnectionObserverBridge_Delete(unsafe.Pointer(b.cBridge))
 	b.handler = nil
 	b.cBridge = nil
 }

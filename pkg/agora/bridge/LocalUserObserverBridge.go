@@ -484,7 +484,7 @@ func (b *LocalUserObserverBridge) ToAgoraEventHandler() *agora.ILocalUserObserve
 }
 
 func (b *LocalUserObserverBridge) Delete() {
-	C.C_LocalUserObserverBridge_Delete(unsafe.Pointer(b))
+	C.C_LocalUserObserverBridge_Delete(unsafe.Pointer(b.cBridge))
 	b.handler = nil
 	b.cBridge = nil
 }

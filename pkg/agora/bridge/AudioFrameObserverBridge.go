@@ -171,7 +171,7 @@ func (b *AudioFrameObserverBridge) ToAgoraEventHandler() *agora.IAudioFrameObser
 }
 
 func (b *AudioFrameObserverBridge) Delete() {
-	C.C_AudioFrameObserverBridge_Delete(unsafe.Pointer(b))
+	C.C_AudioFrameObserverBridge_Delete(unsafe.Pointer(b.cBridge))
 	b.handler = nil
 	b.cBridge = nil
 }
