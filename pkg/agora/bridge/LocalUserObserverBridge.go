@@ -6,8 +6,8 @@ package bridge
 #cgo LDFLAGS: -L${SRCDIR}/../../../third_party/agora_rtc_sdk_c/ -lagora_rtc_sdk_c -lstdc++
 
 //链接AgoraRTC SDK
-#cgo CFLAGS: -I${SRCDIR}/../../../third_party/agora_rtc_sdk_c/agora_rtc_sdk-prefix/src/agora_rtc_sdk/agora_sdk/include
-#cgo LDFLAGS: -L${SRCDIR}/../../../third_party/agora_rtc_sdk_c/agora_rtc_sdk-prefix/src/agora_rtc_sdk/agora_sdk -lagora_rtc_sdk -lagora-ffmpeg -lagora-fdkaac
+#cgo CFLAGS: -I${SRCDIR}/../../../third_party/agora_rtc_sdk_c/agora_rtc_sdk_download-prefix/src/agora_rtc_sdk_download/agora_sdk/include
+#cgo LDFLAGS: -L${SRCDIR}/../../../third_party/agora_rtc_sdk_c/agora_rtc_sdk_download-prefix/src/agora_rtc_sdk_download/agora_sdk -lagora_rtc_sdk -lagora-ffmpeg -lagora-fdkaac
 
 #include "bridge/C_LocalUserObserverBridge.h"
 
